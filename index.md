@@ -3,8 +3,6 @@ layout: default
 title: Home
 ---
 
-# Dongjae Han
-
 Physics, research, and programming notes.
 
 ## Posts
