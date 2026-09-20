@@ -3,11 +3,6 @@ layout: default
 title: Home
 ---
 
-## Posts
+<h1>Posts</h1>
 
-{% for post in site.posts %}
-
-- [{{ post.title }}]({{ post.url | relative_url }})  
-  {{ post.date | date: "%Y-%m-%d" }}
-
-{% endfor %}
+{% include post-list.html posts=site.posts %}

@@ -117,6 +117,116 @@ body {
     max-width: 800px;
 }
 
+.main-content > h1 {
+    margin-top: 0;
+}
+
+.main-content a {
+    color: #245b88;
+    text-underline-offset: 3px;
+}
+
+.sidebar-menu a[aria-current="page"] {
+    color: #245b88;
+    font-weight: bold;
+}
+
+.post-card {
+    padding: 24px 0;
+    border-bottom: 1px solid #e2e6ea;
+    overflow-wrap: anywhere;
+}
+
+.post-card:first-child {
+    padding-top: 8px;
+}
+
+.post-card h2 {
+    margin: 0 0 6px;
+    font-size: 1.5rem;
+    line-height: 1.35;
+}
+
+.post-card h2 a {
+    text-decoration: none;
+}
+
+.post-card h2 a:hover {
+    text-decoration: underline;
+}
+
+.post-date {
+    display: block;
+    color: #626b74;
+    font-size: 0.9rem;
+}
+
+.post-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.category-label {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 4px;
+    background: #edf3f8;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+a.category-label:hover {
+    background: #dce9f3;
+    text-decoration: underline;
+}
+
+.post-description {
+    margin: 12px 0 0;
+    color: #454e57;
+}
+
+.empty-state {
+    color: #626b74;
+    padding: 24px 0;
+}
+
+code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 0.9em;
+}
+
+:not(pre) > code {
+    padding: 2px 5px;
+    border-radius: 3px;
+    background: #f0f3f6;
+    overflow-wrap: anywhere;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 18px 20px;
+    border: 1px solid #dce2e8;
+    border-radius: 6px;
+    background: #f6f8fa;
+    line-height: 1.6;
+    tab-size: 4;
+}
+
+pre code {
+    padding: 0;
+    background: transparent;
+}
+
+.highlight {
+    margin: 0;
+}
+
+div.highlighter-rouge {
+    margin: 1.5rem 0;
+}
+
 @media (max-width: 800px) {
 
     .page-layout {

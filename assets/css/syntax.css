@@ -1,0 +1,27 @@
+/* Rouge tokens for fenced code blocks (Python, C++, Bash, and others). */
+.highlight { color: #24292f; background: #f6f8fa; }
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cs,
+.highlight .ch { color: #57636f; font-style: italic; }
+.highlight .cp, .highlight .cpf { color: #8250df; }
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kn,
+.highlight .kp, .highlight .kr, .highlight .kt { color: #cf222e; }
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb,
+.highlight .sc, .highlight .sd, .highlight .sh, .highlight .sx,
+.highlight .sr, .highlight .ss, .highlight .dl { color: #0a3069; }
+.highlight .se, .highlight .si { color: #0550ae; }
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh,
+.highlight .mi, .highlight .mo, .highlight .il { color: #0550ae; }
+.highlight .na, .highlight .nb, .highlight .bp, .highlight .no,
+.highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi,
+.highlight .vm { color: #0550ae; }
+.highlight .nc, .highlight .nf, .highlight .fm, .highlight .nn,
+.highlight .nd { color: #6639ba; }
+.highlight .nt, .highlight .ne { color: #953800; }
+.highlight .o, .highlight .ow { color: #cf222e; }
+.highlight .err { color: #82071e; background: #ffebe9; }
+.highlight .gd { color: #82071e; background: #ffebe9; }
+.highlight .gi { color: #116329; background: #dafbe1; }
+.highlight .gh, .highlight .gu { color: #0550ae; font-weight: bold; }
+.highlight .ge { font-style: italic; }
+.highlight .gs { font-weight: bold; }
+.highlight .w { color: inherit; }

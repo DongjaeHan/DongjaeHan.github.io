@@ -7,5 +7,13 @@ baseurl: ""
 timezone: Asia/Seoul
 
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
 
-permalink: /posts/:year/:month/:day/:title/
+permalink: /posts/:title/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

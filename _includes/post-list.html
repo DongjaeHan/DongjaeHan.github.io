@@ -1,0 +1,12 @@
+<div class="post-list">
+  {% for post in include.posts %}
+    <article class="post-card">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+      <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      {% include post-categories.html categories=post.categories %}
+      <p class="post-description">{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 180 | escape }}</p>
+    </article>
+  {% else %}
+    <p class="empty-state">No posts in this category yet.</p>
+  {% endfor %}
+</div>

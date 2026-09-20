@@ -1,8 +1,14 @@
+---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World - Dongjae Han</title>
+    <link rel="canonical" href="{{ '/posts/hello-world/' | absolute_url }}">
+    <meta http-equiv="refresh" content="0; url={{ '/posts/hello-world/' | relative_url }}">
 </head>
 <body>
 
@@ -10,26 +16,13 @@
         <h1>Hello World</h1>
 
         <p>
-            <small>September 18, 2026</small>
-        </p>
-
-        <p>
-            This is my first test post on GitHub Pages.
-        </p>
-
-        <p>
-            I will use this blog to write about physics, research,
-            programming, and other things I find interesting.
-        </p>
-
-        <p>
-            Hello, world!
+            This post has moved. <a href="{{ '/posts/hello-world/' | relative_url }}">Read Hello World</a>.
         </p>
     </article>
 
     <hr>
 
-    <a href="../index.html">← Back to home</a>
+    <a href="{{ '/' | relative_url }}">← Back to home</a>
 
 </body>
 </html>

@@ -2,6 +2,7 @@
 layout: post
 title: "Hello World"
 date: 2026-09-20
+description: "An introduction to my notes on physics, research, and programming, with mathematics and code examples."
 categories:
   - Miscellaneous
 ---

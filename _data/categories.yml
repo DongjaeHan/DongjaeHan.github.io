@@ -1,0 +1,8 @@
+- name: Research
+  url: /categories/research/
+- name: Physics Notes
+  url: /categories/physics/
+- name: Programming
+  url: /categories/programming/
+- name: Miscellaneous
+  url: /categories/miscellaneous/

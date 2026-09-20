@@ -1,0 +1,10 @@
+<div class="post-categories" aria-label="Categories">
+  {% for category in include.categories %}
+    {% assign category_page = site.data.categories | where: "name", category | first %}
+    {% if category_page %}
+      <a class="category-label" href="{{ category_page.url | relative_url }}">{{ category | escape }}</a>
+    {% else %}
+      <span class="category-label">{{ category | escape }}</span>
+    {% endif %}
+  {% endfor %}
+</div>

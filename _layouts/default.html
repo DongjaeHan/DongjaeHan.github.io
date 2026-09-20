@@ -13,7 +13,9 @@
         {% endif %}
     </title>
 
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
 
     <!-- MathJax -->
     <script>
@@ -65,28 +67,15 @@
                         </a>
                     </li>
 
+                    {% for category in site.data.categories %}
+                        <li>
+                            <a href="{{ category.url | relative_url }}"{% if page.url == category.url %} aria-current="page"{% endif %}>
+                                {{ category.name | escape }}
+                            </a>
+                        </li>
+                    {% endfor %}
                     <li>
-                        <a href="{{ '/categories/research/' | relative_url }}">
-                            Research
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="{{ '/categories/physics/' | relative_url }}">
-                            Physics Notes
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="{{ '/categories/programming/' | relative_url }}">
-                            Programming
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="{{ '/categories/miscellaneous/' | relative_url }}">
-                            Miscellaneous
-                        </a>
+                        <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
                     </li>
                 </ul>
             </section>
