@@ -1,0 +1,11 @@
+title: Dongjae Han
+description: Physics, research, and programming notes
+
+url: "https://dongjaehan.github.io"
+baseurl: ""
+
+timezone: Asia/Seoul
+
+markdown: kramdown
+
+permalink: /posts/:year/:month/:day/:title/

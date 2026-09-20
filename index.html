@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Dongjae Han</title>
-</head>
-<body>
-    <h1>Dongjae Han</h1>
 
+---
+layout: default
+title: Home
+---
 
-    <h2>Posts</h2>
+<h1>Dongjae Han</h1>
 
-    <ul>
+<p>
+    Physics, research, and programming notes.
+</p>
+
+<h2>Posts</h2>
+
+<ul>
+    {% for post in site.posts %}
         <li>
-            <a href="posts/hello-world.html">
-                Hello World
+            <a href="{{ post.url | relative_url }}">
+                {{ post.title }}
             </a>
-            — September 18, 2026
-        </li>
-    </ul>
-    <p>Physics M.S. student.</p>
 
-    <p>This is my personal research blog.</p>
-</body>
-</html>
+            <small>
+                {{ post.date | date: "%Y-%m-%d" }}
+            </small>
+        </li>
+    {% endfor %}
+</ul>
