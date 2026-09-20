@@ -3,8 +3,6 @@ layout: default
 title: Home
 ---
 
-Physics, research, and programming notes.
-
 ## Posts
 
 {% for post in site.posts %}
