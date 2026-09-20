@@ -3,5 +3,8 @@ layout: default
 ---
 <h1>{{ page.title | escape }}</h1>
 {{ content }}
-{% assign category_posts = site.categories[page.category] | sort: "date" | reverse %}
+{% assign category_posts = site.categories[page.category] %}
+{% if category_posts and category_posts.size > 0 %}
+  {% assign category_posts = category_posts | sort: "date" | reverse %}
+{% endif %}
 {% include post-list.html posts=category_posts %}
